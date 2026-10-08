@@ -31,3 +31,38 @@
 
 </div>
 
+## Offline repository history
+
+Open [`site/public/history/index.html`](site/public/history/index.html) directly
+in a browser (`file://` works), or serve the dashboard folder with
+`python -m http.server 8000 --directory site/public/history` and visit
+`http://localhost:8000/`. No installation, credentials, or network access is
+needed to view or filter it; GitHub source links require a network.
+The old `site/index.html` entry point links to this single canonical copy.
+
+The checked-in data is in `site/public/history/snapshot.js`, loaded as a classic
+deferred script, not fetched JSON. It was checked against authenticated GitHub
+API lists, individual issue/PR details, and issue comments on **October 8, 2026
+(UTC)** for repository ID **1400577503**. It includes six issues (#1, #5, #7,
+#8, #9, #11) and five PRs (#2, #3, #4, #6, #10), excluding dashboard PR #12.
+Totals are computed from those arrays, not live repository totals.
+Summaries name their body/comment sources; the overview is editorial.
+Exact API timestamps are displayed in UTC; timelines contain verified opening
+and closure/merge events, not every discussion event.
+
+To refresh, retrieve all pages of `/repos/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues?state=all`
+and `/pulls?state=all` using authenticated GitHub access. The issues endpoint
+also contains PRs: exclude entries with `pull_request` before constructing the
+issue array. Check individual records and relevant `/issues/{number}/comments`
+for authors, labels, bodies, `created_at`, `updated_at`, `closed_at`,
+`merged_at`, and draft state. Update both arrays, summaries/source references,
+the snapshot scope/as-of fields, and the HTML as-of/no-JavaScript source list.
+Use null/omit dates that cannot be verified; state the limitation rather than
+infer dates from relative ages. Do not treat a closed report as proof that
+later recurring reports are resolved. Never include credentials in the snapshot.
+
+The existing Astro homepage and exercise workflows are unchanged. Astro copies
+`site/public/history/` to `site/dist/history/`, so `cd site && npm ci && npm run build`
+includes the dashboard; `npm run preview` serves it at
+`http://localhost:4321/history/index.html`. The standalone version does not
+require Astro. Run lightweight checks with `node --test site/dashboard.test.mjs`.
