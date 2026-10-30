@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An offline snapshot of this repository’s issues and pull request history." />
+    <title>Repository history · Agentic Workflows</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="snapshot.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to history</a>
+    <header class="hero">
+      <div class="container">
+        <p class="kicker">Agentic Workflows That Read the Room</p>
+        <h1>A little history.<br />A clearer picture.</h1>
+        <p class="subtitle">Issues and pull requests for <strong>TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room</strong></p>
+        <nav aria-label="Page sections"><a href="#issues">Issues</a><a href="#prs">Pull requests</a><a href="#about">About the snapshot</a></nav>
+      </div>
+    </header>
+    <main id="main" class="container layout">
+      <section class="card" id="about" aria-labelledby="about-title">
+        <p class="kicker">Checked-in snapshot · <time datetime="2026-10-08">October 8, 2026 (UTC)</time></p>
+        <h2 id="about-title">An exercise, an updater, and recurring reports</h2>
+        <p>This GitHub Skills exercise practices installing and creating agentic workflows for Mona’s GitHub Info website. Issue #1 records the exercise; PRs #2–4 cover setup and the updater, while #10 proposes website content.</p>
+        <p><strong>Editorial overview:</strong> missing-tool reports recur in #5, #7, #8, and #9. Closure of #5 and merge of #6 do not prove the later reports are resolved. Issue #11 tracks detection outcomes; its comment reports a parse error, not a confirmed threat.</p>
+        <p id="snapshot-source">Verified from GitHub API records and comments on October 8, 2026. This is not live activity. Dashboard PR #12 and subsequent activity are outside this snapshot.</p>
+        <p>Record summaries below are paraphrases of the named sources, not full discussions. All timestamps are UTC. GitHub links provide the full history and require a network connection.</p>
+      </section>
+      <section class="card" aria-labelledby="stats-title">
+        <h2 id="stats-title">Snapshot totals</h2>
+        <p>Totals include every record in this snapshot and do not change with filters.</p>
+        <div class="stats-grid">
+          <article class="stat"><h3>All issues</h3><p id="totalIssues">—</p></article>
+          <article class="stat"><h3>Open issues</h3><p id="openIssues">—</p></article>
+          <article class="stat"><h3>Closed issues</h3><p id="closedIssues">—</p></article>
+          <article class="stat"><h3>All pull requests</h3><p id="totalPrs">—</p></article>
+          <article class="stat"><h3>Merged PRs</h3><p id="mergedPrs">—</p></article>
+          <article class="stat"><h3>Open PRs</h3><p id="openPrs">—</p></article>
+        </div>
+      </section>
+      <noscript>
+        <section class="card">
+          <h2>History without JavaScript</h2>
+          <p>The overview above is available offline. Enable JavaScript to display the local snapshot records, totals, timestamps, search, and timelines. No API requests are made.</p>
+          <p>Snapshot issue sources:
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues/1">#1: Exercise</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues/5">#5: Missing tool (closed)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues/7">#7: Missing tool (open)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues/8">#8: Missing tool (open)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues/9">#9: Missing tool (open)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/issues/11">#11: Detection tracking (open)</a>.
+          </p>
+          <p>Snapshot PR sources:
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/pull/2">#2: Initialization (merged)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/pull/3">#3: Create updater (merged)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/pull/4">#4: Update updater (merged)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/pull/6">#6: Missing-tool PR (merged)</a>,
+            <a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room/pull/10">#10: Content updates (open draft)</a>.
+          </p>
+        </section>
+      </noscript>
+      <section class="card" id="issues" aria-labelledby="issues-title">
+        <h2 id="issues-title">Issue history</h2>
+        <p>Records appear oldest first. Search and status apply to both records and their creation/closure timeline.</p>
+        <div class="controls">
+          <label>Search issues<input id="issueSearch" type="search" placeholder="Title, #number, author, label…" disabled /></label>
+          <label>Issue status<select id="issueStatus" disabled><option value="all">All statuses</option><option value="open">Open</option><option value="closed">Closed</option></select></label>
+        </div>
+        <p id="issueResults" role="status" aria-live="polite">Waiting for the local snapshot to load.</p>
+        <ul class="records" id="issueRecords"></ul>
+        <h3>Issue timeline · oldest first</h3>
+        <ol class="timeline" id="issueTimeline"></ol>
+      </section>
+      <section class="card" id="prs" aria-labelledby="prs-title">
+        <h2 id="prs-title">Pull request history</h2>
+        <p>Merged is distinct from closed without merge. Open drafts are included under Open.</p>
+        <div class="controls">
+          <label>Search pull requests<input id="prSearch" type="search" placeholder="Title, #number, author, label…" disabled /></label>
+          <label>PR status<select id="prStatus" disabled><option value="all">All statuses</option><option value="open">Open</option><option value="merged">Merged</option><option value="closed">Closed without merge</option></select></label>
+        </div>
+        <p id="prResults" role="status" aria-live="polite">Waiting for the local snapshot to load.</p>
+        <ul class="records" id="prRecords"></ul>
+        <h3>Pull request timeline · oldest first</h3>
+        <ol class="timeline" id="prTimeline"></ol>
+      </section>
+    </main>
+    <footer class="container footer"><p>Static by design. Local assets, no tracking, no runtime API calls.</p><a href="https://github.com/TimmyTheTurtle/skills-copilot-10-agentic-workflows-that-read-the-room">View repository on GitHub</a></footer>
+  </body>
+</html>
